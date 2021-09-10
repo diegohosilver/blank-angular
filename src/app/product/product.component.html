@@ -12,18 +12,4 @@
 
 	</div>
 
-	<label>*NgIf</label> <br>
-
-	<p *ngIf="hasItems()">{{ count }}</p> <br>
-
-	<label>Display none</label> <br>
-
-	<p [style.display]="!hasItems() ? 'none' : ''">{{ count }}</p> <br>
-
-	<button (click)="addItem()">Agregar</button>
-
-	<hr> <br>
-
-	<app-product-list [products]="products"></app-product-list>
-
 </div>

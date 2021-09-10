@@ -7,6 +7,7 @@ import { EjemploAngularVsJsComponent } from './ejemplo-angular-vs-js/ejemplo-ang
 import { ProductComponent } from './product/product.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductImageComponent } from './product-image/product-image.component';
+import { DirectivasComponent } from './directivas/directivas.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ProductImageComponent } from './product-image/product-image.component';
     EjemploAngularVsJsComponent,
     ProductComponent,
     ProductListComponent,
-    ProductImageComponent
+    ProductImageComponent,
+    DirectivasComponent
   ],
   imports: [
     BrowserModule,

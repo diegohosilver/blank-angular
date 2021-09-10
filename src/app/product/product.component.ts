@@ -19,10 +19,6 @@ export class ProductComponent {
 		this.products.push(`${this.count} ${this.getProductName()}`);
 	}
 
-	hasItems(): boolean {
-		return this.count > 0;
-	}
-
 	getProductName(): string {
 
 		switch(this.product) {

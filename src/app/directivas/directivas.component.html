@@ -1,0 +1,11 @@
+<label>*NgIf</label> <br>
+
+<p *ngIf="hasItems()">{{ count }}</p> <br>
+
+<label>Display none (o "NgShow")</label> <br>
+
+<p [style.display]="!hasItems() ? 'none' : ''">{{ count }}</p> <br>
+
+<button (click)="addItem()">Agregar</button>
+
+<app-product-list [products]="list"></app-product-list>
