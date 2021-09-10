@@ -26,3 +26,5 @@ ng serve
 ## Diapositivas
 
 1. [Introducción](https://docs.google.com/presentation/d/1XRLgRDoVQBGtAY8aO2vUMtF2Whoi_IlfxYQkws0OeS4/edit?usp=sharing)
+
+2. [Elementales](https://docs.google.com/presentation/d/17m9-behcVUybIUjle3z_eEiWOOGKIMI7HIjcyacX1gU/edit?usp=sharing)

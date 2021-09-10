@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { ProductType } from '../product-type';
 
 @Component({
   selector: 'app-product',
@@ -7,10 +8,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductComponent {
 
-	title = 'Café bonafide';
+	@Input("product") product?: number;
+	ProductType = ProductType;
 	count = 0;
+	products = new Array<string>();
 
 	addItem(): void {
 		this.count ++;
+
+		this.products.push(`${this.count} ${this.getProductName()}`);
+	}
+
+	hasItems(): boolean {
+		return this.count > 0;
+	}
+
+	getProductName(): string {
+
+		switch(this.product) {
+			case ProductType.Cafe:
+				return "Café Bonafide";
+			case ProductType.Galletitas:
+				return "Galletitas Toddy's";
+			default:
+				return "Ni idea que es esto";
+		}
 	}
 }
