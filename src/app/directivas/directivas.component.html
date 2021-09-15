@@ -1,11 +1,31 @@
-<label>*NgIf</label> <br>
+<div class="directivas">
 
-<p *ngIf="hasItems()">{{ count }}</p> <br>
+	<app-product-list [products]="list"></app-product-list>
 
-<label>Display none (o "NgShow")</label> <br>
+	<div *ngIf="hasItems()">
 
-<p [style.display]="!hasItems() ? 'none' : ''">{{ count }}</p> <br>
+		<label [ngClass]="customClass">*NgIf</label>
 
-<button (click)="addItem()">Agregar</button>
+		<p>{{ count }}</p>
 
-<app-product-list [products]="list"></app-product-list>
+	</div>
+
+	<div [style.display]="!hasItems() ? 'none' : ''">
+
+		<label [ngClass]="{'active': hasItems()}">Display none (o "NgShow")</label>
+
+		<p [ngStyle]="{'font-weight': !hasItems() ? 'regular' : 'bold'}">{{ count }}</p>
+
+	</div>
+
+	<div>
+
+		<label>Especifique cantidad a agregar</label>
+
+		<input type="number" placeholder="Ingrese una cantidad" [(ngModel)]="amount"/>
+
+	</div>
+
+	<button (click)="addItem()">{{ buttonText | lowercase }}</button>
+
+</div>

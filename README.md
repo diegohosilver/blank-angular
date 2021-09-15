@@ -23,11 +23,13 @@ npm install
 ng serve
 ```
 
-## Diapositivas
+## Diapositivas y enlaces útiles
 
 1. [Introducción](https://docs.google.com/presentation/d/1XRLgRDoVQBGtAY8aO2vUMtF2Whoi_IlfxYQkws0OeS4/edit?usp=sharing)
 
 2. [Elementales](https://docs.google.com/presentation/d/17m9-behcVUybIUjle3z_eEiWOOGKIMI7HIjcyacX1gU/edit?usp=sharing)
+
+2.1 [Directivas](https://angular.io/guide/attribute-directives)
 
 ## Tarea
 

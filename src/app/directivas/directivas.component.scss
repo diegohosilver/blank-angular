@@ -1,0 +1,13 @@
+.directivas {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	
+	.active {
+		color: red;
+	}
+
+	.default {
+		color: lightblue;
+	}
+}
