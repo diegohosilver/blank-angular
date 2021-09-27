@@ -1,0 +1,15 @@
+<div class="product">
+
+	<p>{{ getProductName() }}</p>
+
+	<div [ngSwitch]="product">
+
+		<app-product-image *ngSwitchCase="ProductType.Cafe" [url]="'https://s1.eestatic.com/2017/02/13/cocinillas/cocinillas_193495389_116293001_1706x960.jpg'"></app-product-image>
+
+		<app-product-image *ngSwitchCase="ProductType.Galletitas" [url]="'http://www.guiaderecetas.com/static/images/categorias/normal/galletitas.jpg'"></app-product-image>
+
+		<app-product-image *ngSwitchDefault [url]="'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL7uV7TAiZrqrkoo39_UYEqCuYOQwpzcxsxk77kiukNZcGSLH87rYOQV44IVHr3QdN-Cw&usqp=CAU'"></app-product-image>
+
+	</div>
+
+</div>
